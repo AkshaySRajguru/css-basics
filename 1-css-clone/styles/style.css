@@ -1,0 +1,43 @@
+body {
+  background-color: cornsilk;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.horizontal li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal li a.active {
+  background-color: #04aa6d;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.center-content {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  color: rgb(51, 8, 51);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  color: brown;
+  font-family: "Source Sans Pro", sans-serif;
+  padding-top: 20px;
+}
