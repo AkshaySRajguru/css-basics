@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .container div {
@@ -22,4 +23,8 @@
 
 .item3 {
   background-color: black;
+}
+
+.item4 {
+  background-color: rgb(224, 26, 26);
 }
