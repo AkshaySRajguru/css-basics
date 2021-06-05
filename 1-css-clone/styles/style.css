@@ -1,7 +1,10 @@
 body {
   background-color: cornsilk;
+  margin: 0;
+  padding: 0;
 }
 
+/* navbar styles - start  */
 ul {
   list-style-type: none;
   margin: 0;
@@ -10,17 +13,32 @@ ul {
   background-color: #333;
 }
 
-ul.horizontal li a {
-  display: inline-block;
+li {
+  float: left;
+}
+
+li a {
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-ul.horizontal li a.active {
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+.active {
   background-color: #04aa6d;
 }
+
+.rightli {
+  background-color: #614508;
+}
+
+/* navbar styles - end  */
 
 .main-container {
   text-align: center;
@@ -29,6 +47,7 @@ ul.horizontal li a.active {
 .center-content {
   max-width: 600px;
   margin: auto;
+  text-align: center;
 }
 
 h1 {
@@ -36,8 +55,7 @@ h1 {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-h2 {
+h3 {
   color: brown;
-  font-family: "Source Sans Pro", sans-serif;
   padding-top: 20px;
 }
