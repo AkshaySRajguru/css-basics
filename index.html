@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -16,7 +21,6 @@
   </head>
   <body>
     <h1>CSS Based Projects</h1>
-    <h4>GitHub Page Dashboard</h4>
     <div class="container-1">
       <h2>Challenge 1: Your Age In Days</h2>
       <div class="flexbox-container-1">
@@ -55,67 +59,38 @@
         </div>
       </div>
     </div>
+    <div class="container-2">
+      <h2>Challenge 2: Random Cat Generator</h2>
 
-    <script>
-      function calculateAgeInDays() {
-        var usersBirthYear = document.getElementById("txtBirthYear").value;
-        var date = new Date();
-        var currentYear = date.getFullYear();
+      <div>
+        <input
+          class="btn btn-success"
+          type="button"
+          id="ca-gen-btn"
+          onclick="generateCat()"
+          value="Generate Cat"
+        />
+      </div>
 
-        if (
-          isNaN(usersBirthYear) == false &&
-          parseInt(usersBirthYear) <= currentYear
-        ) {
-          var ageInDays = totalDaysInYears(usersBirthYear);
+      <div class="flexbox-container-2" id="flexbox-div-cat"></div>
+    </div>
 
-          document.getElementById("txtAgeInDays").value = ageInDays + " days";
-        } else {
-          alert("Please enter your birth year in valid number !");
-        }
-      }
+    <div class="footer bottom-container">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/akshay-rajguru-090765166"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="https://github.com/AkshaySRajguru">GitHub</a>
+      <a
+        class="footer-link"
+        href="https://www.youtube.com/watch?v=KN6oBEOz2ZI&t=9466s"
+        >Reference</a
+      >
+      <p class="copyright">© 2021 Akshay Rajguru.</p>
+    </div>
 
-      function resetAgeInDays() {
-        document.getElementById("txtBirthYear").value = null;
-        document.getElementById("txtAgeInDays").value = null;
-      }
-
-      // A year is a leap year if the following conditions are satisfied:
-
-      // The year is a multiple of 400.
-      // The year is a multiple of 4 and not a multiple of 100.
-
-      // program to check leap year
-      function isBirthLeapYear(year) {
-        var isLeapYear = false;
-        // three conditions to find out the leap year
-        if ((0 == year % 4 && 0 != year % 100) || 0 == year % 400) {
-          // console.log(year + " is a leap year");
-          isLeapYear = true;
-        } else {
-          // console.log(year + " is not a leap year");
-          isLeapYear = false;
-        }
-
-        return isLeapYear;
-      }
-
-      // calculate total number of leap years occurred from gien year
-      function totalDaysInYears(year) {
-        var date = new Date();
-        var currentYear = date.getFullYear();
-        //   var totalLeapYears = 0;
-        var totalDays = 0;
-        for (i = year; i <= currentYear; i++) {
-          if (isBirthLeapYear(i)) {
-            //   totalLeapYears = totalLeapYears + 1;
-            totalDays = totalDays + 366;
-          } else {
-            totalDays = totalDays + 365;
-          }
-        }
-        return totalDays;
-      }
-    </script>
+    <script src="./script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
