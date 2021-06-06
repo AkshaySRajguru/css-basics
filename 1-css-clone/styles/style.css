@@ -29,7 +29,8 @@ body {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to #111 (black) on hover i.e. for
+anchors inside link */
 li a:hover {
   background-color: #111;
 }
