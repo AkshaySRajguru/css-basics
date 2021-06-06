@@ -1,0 +1,20 @@
+.container-1 {
+  border: black solid 2px;
+}
+
+.flexbox-container-1 {
+  display: flex;
+  border: red solid 1px;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.flexbox-container-1 div {
+  /* for divs inside flexbox-container-1 class */
+  display: flex;
+  border: darkblue solid 1px;
+  padding: 10px;
+  align-items: center;
+}
