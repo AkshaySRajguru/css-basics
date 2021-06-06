@@ -21,3 +21,28 @@
   padding: 10px;
   align-items: center;
 }
+
+.container-2 {
+  border: black solid 2px;
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+}
+
+.container-2 input {
+  margin: 10px;
+}
+
+.flexbox-container-2 {
+  border: red solid 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+img {
+  box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
+  -webkit-box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
+  -moz-box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
+}
