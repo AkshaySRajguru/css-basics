@@ -5,7 +5,8 @@ function calculateAgeInDays() {
 
   if (
     isNaN(usersBirthYear) == false &&
-    parseInt(usersBirthYear) <= currentYear
+    parseInt(usersBirthYear) <= currentYear &&
+    parseInt(usersBirthYear) > 0
   ) {
     var ageInDays = totalDaysInYears(usersBirthYear);
 
