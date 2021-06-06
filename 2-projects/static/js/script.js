@@ -56,3 +56,15 @@ function totalDaysInYears(year) {
   }
   return totalDays;
 }
+
+// Challenge 2: Cat Generator
+
+function generateCat() {
+  var image = document.createElement("img");
+  image.src =
+    "https://api.thecatapi.com/api/images/get?format=src&type=gif&size=small";
+  image.alt = "cat-image";
+
+  var div = document.getElementById("flexbox-div-cat");
+  div.appendChild(image);
+}
