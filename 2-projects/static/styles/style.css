@@ -41,7 +41,9 @@
   flex-wrap: wrap;
 }
 
-img {
+.flexbox-container-2 img {
+  border: green solid 1px;
+  padding: 10px;
   box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
   -webkit-box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
   -moz-box-shadow: -1px -1px 38px 0px rgba(70, 184, 178, 0.75);
