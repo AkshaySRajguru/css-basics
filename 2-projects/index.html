@@ -20,7 +20,29 @@
       <h2>Challenge 1: Your Age In Days</h2>
       <div class="flexbox-container-1">
         <div>
-          <input class="btn btn-primary" type="button" value="Input" />
+          <input
+            id="txtBirthYear"
+            class="form-control form-control-sm"
+            type="text"
+            placeholder="Enter your birth year"
+          />
+        </div>
+        <div>
+          <input
+            class="btn btn-primary"
+            onclick="calculateAgeInDays()"
+            type="button"
+            value="Input"
+          />
+        </div>
+        <div>
+          <input
+            id="txtAgeInDays"
+            class="form-control form-control-sm"
+            type="text"
+            readonly="true"
+            placeholder="Your age in days"
+          />
         </div>
         <div>
           <input class="btn btn-secondary" type="reset" value="Reset" />
